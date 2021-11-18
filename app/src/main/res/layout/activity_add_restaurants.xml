@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addRestaurantRoot"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AddRestaurants"
+android:background="#15202b"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <TextView
+        android:id="@+id/txtNomRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nom_restaurant"
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#E8CECE" />
+    <EditText
+        android:id="@+id/editNom"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:layout_toRightOf="@id/txtNomRestaurant"
+        android:layout_alignBottom="@id/txtNomRestaurant"
+
+/>
+    <TextView
+        android:id="@+id/txtDateHeureRepas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_heure_repas"
+        android:layout_below="@id/txtNomRestaurant"
+        android:padding="10dp"
+        android:textColor="#E8CECE"/>
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtDateHeureRepas"
+        android:layout_alignBottom="@id/txtDateHeureRepas"
+
+        android:textColor="@color/text"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_date"
+        android:layout_below="@id/txtDateHeureRepas"/>
+    <TextView
+        android:id="@+id/txtNoteDecoration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note_decoration"
+        android:textColor="#E8CECE"
+        android:padding="10dp"
+        android:layout_below="@id/btnPickDate"
+    />
+    <com.google.android.material.slider.Slider
+    android:id="@+id/sliderDeco"
+    android:valueFrom="0"
+    android:valueTo="10"
+        android:stepSize="1"
+        android:layout_height="30dp"
+        android:layout_width="200dp"
+        android:layout_alignBottom="@id/txtNoteDecoration"
+        android:layout_toRightOf="@id/txtNoteDecoration"
+        />
+
+    <TextView
+        android:id="@+id/txtNoteService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note_service"
+        android:textColor="#E8CECE"
+        android:padding="10dp"
+        android:layout_below="@id/txtNoteDecoration"/>
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderService"
+        android:valueFrom="0"
+        android:valueTo="10"
+        android:stepSize="1"
+        android:layout_height="30dp"
+        android:layout_width="200dp"
+        android:layout_alignBottom="@id/txtNoteService"
+        android:layout_alignLeft="@id/sliderDeco" />
+
+    <TextView
+        android:id="@+id/txtZoneDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zone_description"
+        android:textColor="#E8CECE"
+        android:padding="10dp"
+        android:layout_below="@id/txtNoteService"
+        />
+    <EditText
+        android:id="@+id/editCritique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtZoneDescription"
+        android:textColor="@color/text"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnConfirmAddingRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+
+        />
+</RelativeLayout>

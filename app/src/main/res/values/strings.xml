@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EnigMIAM</string>
+    <string name="title_activity_add_restaurants">AddRestaurants</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="nom_restaurant">Nom du restaurant : </string>
+    <string name="date_heure_repas">Date et heure du repas : </string>
+    <string name="note_decoration">Note de la décoration :</string>
+    <string name="note_service">Note du service : </string>
+    <string name="zone_description">Décrivez votre expérience : </string>
+    <string name="pick_date">Choisir la date</string>
+
+
+
+
+</resources>

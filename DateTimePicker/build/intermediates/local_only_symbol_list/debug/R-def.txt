@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+anim nav_default_enter_anim
+anim nav_default_exit_anim
+color colorAccent
+color colorControl
+color colorPrimary
+color colorPrimaryDark
+drawable ic_close_24
+drawable ic_next_24
+drawable ic_submit_24
+id action_next
+id action_submit
+id app_bar
+id date_picker
+id time_picker
+id toolbar
+id view_switcher
+integer config_navAnimTime
+layout dialog_date_picker
+layout dialog_date_time_picker
+menu toolbar_next
+menu toolbar_submit
+string action_close
+string action_next
+string action_submit
+string title_select_date
+string title_select_time
+style AppTheme.AppBarOverlay
+style AppTheme.Components
+style AppTheme.PopupOverlay
